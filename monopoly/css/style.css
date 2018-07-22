@@ -1,0 +1,372 @@
+/*****************************************
+  Universal Styling
+******************************************/
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial;
+    font-size: 14px;
+}
+
+
+/*****************************************
+  General board alignment 
+******************************************/
+
+
+.board{
+    display: grid;
+    width: 984px;
+    height: 984px;
+    margin: auto;
+    grid-template-columns: 120px repeat(9, 80px) 120px;
+    grid-template-rows: 120px 9fr 120px;
+    border: 2px solid black;
+    grid-gap: 2px;
+    background: black;
+}
+
+.row{
+    display: grid;
+    grid-gap: 2px;
+}
+
+.horizontal-row{
+    grid-template-rows: 120px;
+    grid-template-columns: 120px repeat(9, 80px) 120px;
+}
+
+.vertical-row{
+    grid-template-rows: repeat(9, 80px);
+    grid-template-columns: 120px;
+}
+
+.vertical-row .container{
+    top: 50%;
+	left: 50%;
+}
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #fafaf8;
+}
+
+.rotate-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.rotate-buttons button{
+    height: 40px;
+}
+
+.top{
+    grid-column: 1/12;
+    grid-row: 1/2;
+}
+
+.top .container{
+    transform: rotate(180deg);
+}
+
+.left{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.left .container{
+    transform: rotate(90deg);
+}
+
+.center{
+    grid-column: 2/11;
+
+}
+
+.right{
+    grid-column: 11/12;
+    grid-row: 2/3;
+}
+
+.right .container{
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+.bottom{
+    grid-row: 3;
+    grid-column: 1/12;
+}
+
+
+/*****************************************
+  CSS styling for the Board Center
+******************************************/
+
+.main{
+    text-align: center;
+}
+
+
+/*****************************************
+  CSS Styling for text and general spaces
+******************************************/
+
+.space{
+    background-color: #fafaf8;;
+}
+
+
+.space .container{
+    height: 120px;
+    width: 80px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform-origin: center;
+    word-wrap: break-word;
+}
+
+.left .container{
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.space .property-price, .instructions{
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.property-name, .railway-name, .chance, .income-tax, .luxury-tax{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    margin-bottom: auto;
+}
+
+.luxury-tax, .income-tax, .jail-text{
+    font-weight: bold;
+}
+
+.community-chest{
+    padding-top: 5px;
+}
+
+.go{
+    font-size: 50px;
+    -webkit-text-stroke: 1px black;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.go-instructions{
+    font-size: 11px;
+}
+
+.free-parking{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+.jail{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+
+/*****************************************
+  CSS Styling for Space Images
+******************************************/
+
+.community-chest-space .container{
+    background-image: url("../images/community_chest.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 60px;
+}
+
+.chance-space .container{
+    background-image: url("../images/chance.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 70px 75px;
+}
+
+.railway .container{
+    background-image: url("../images/railroad.png");
+    background-position: 50% 70%;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+.top-left .container{
+    background-image: url("../images/in_jail.png");
+    background-position: 25% 75%;
+    background-repeat: no-repeat;
+    background-size: 60px 50px;
+}
+
+.top-right .container{
+    background-image: url("../images/free_parking.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px 75px;
+}
+
+.bottom-right .container{
+    background-image: url("../images/jailman.png");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px 75px;
+}
+
+.utility-electric .container{
+    background-image: url("../images/electric_company.png");
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+}
+
+.utility-water .container{
+    background-image: url("../images/waterworks.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+}
+
+/*****************************************
+  CSS Styling for the corner spaces  
+******************************************/
+
+.top-left .container{
+    align-content: space-between;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.top-right .container{
+    transform: rotate(225deg);
+    align-content: space-around;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.bottom-left .container{
+    transform: rotate(45deg);
+    align-content: space-around;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+.bottom-right .container{
+    transform: rotate(315deg);
+    align-content: space-around;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.visiting-jail{
+    display: grid;
+    grid-template-columns: .7fr 1fr 1fr;
+    grid-template-rows: .7fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+}
+
+.just-section{
+    grid-row: 1/2;
+    grid-column: 2/4;
+    transform: rotate(180deg);
+    text-align: center;
+}
+
+.visiting-section{
+    grid-row: 1/4;
+    grid-column: 1/2;
+}
+
+.visiting-text{
+    transform: rotate(90deg);
+    margin-top: 70px;
+    margin-right: -17px;
+}
+
+.jail-section{
+    grid-row: 2/4;
+    grid-column: 2/4;
+    background-color: orangered;
+    display: flex;
+    justify-content: space-between;
+}
+
+.jail-section .container{
+    transform: rotate(135deg);
+}
+
+.jail-text{
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+
+/*****************************************
+  CSS Styling for space colours
+******************************************/
+
+.set{
+    height: 30px;
+    width: 80px;
+    border-bottom:  2px solid black;
+}
+
+.brown{
+    background-color: brown;
+}
+
+.light-blue{
+    background-color: lightblue;
+}
+
+.purple{
+    background-color: purple;
+}
+
+.orange{
+    background-color: orange;
+}
+
+.orangered{
+    background-color: orangered;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+

@@ -1,0 +1,169 @@
+<html lang="en">
+
+<head>
+    <title>Jarrod Stone Portfolio</title>
+    <!--Encoding, Viewport and SEO --> 
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio and previous works for Jarrod Stone">
+	<!-- Resources -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">    
+    <script src="js/functions.js"></script>        
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <div id="navigation">
+
+            <ul id="logo">
+                <li><a href="#"><img src="images/nav/js.svg" alt="Jarrod Stone" title="Jarrod Stone"></a></li>
+            </ul>
+
+            <div id="internal-navigation-container">
+                <ul id="internal-links">
+                    <li><a onclick="changePage('landing')"><img src="images/nav/home.svg" alt="Home" title="Home"></a></li>
+                    <li><a onclick="changePage('about')"><img src="images/nav/profile.svg" alt="About" title="About Me"></a></li>
+                    <li><a onclick="changePage('projects')"><img src="images/nav/folder.svg" alt="Projects" title="My Projects"></a></li>
+                    <li><a onclick="changePage('contact')"><img src="images/nav/contact.svg" alt="Contact" title="Contact"></a></li>
+                </ul>
+            </div>
+
+
+            <ul id="external-links">
+                <li><a target="_blank" href="https://www.linkedin.com/in/jarrod-stone-582a55161/"><img src="images/nav/linkedin.svg" alt="Linked In" title="Linked In"></a></li>
+                <!-- <li><a target="_blank" href="https://github.com/Jarrod-Stone"><img src="images/nav/github.svg" alt="Github" title="Github"></a></li> -->
+            </ul>
+        </div>
+    
+        <div id="main">
+            
+            <!-- Main Landing -->
+            <div id="landing">
+                <h1 id="splash-name">Jarrod Stone</h1>
+                <p class="splash-text">&lt;WebDeveloper age={24} location='QLD' /&gt;</p>
+                <p class="splash-text italic">My skills & a sample of my works</p>
+            </div>
+
+            <!-- About -->
+            <div id="about">
+                <div class="content-container">
+                    <h2 class="page-title">About Me</h2>
+                    <div id="about-content">
+                        <div id="about-text">
+                            <p>
+                                Hi, Im Jarrod. Aspiring full stack developer, I have been playing around with HTML and CSS for a long time.  I was first introduced to programming
+                                using Java and PHP, however I have been developing a budding passion for JS frameworks.
+                            </p>
+
+                            <p>
+                                I have recently graduated from the University of Queensland with a bachelor of Multimedia Design.
+                            </p>
+                            
+                        </div>
+
+                        <div id="portrait">
+                            <img src="images/portrait.jpg" alt="Personal Portrait">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div id="projects">
+                <h2 class="page-title" id="projects-page-title">Projects</h2>
+                <div id="project-container">
+                    <div class="project-item project-1">
+                        <div class="project-details">
+                            <span class="project-title">100% Brisbane</span>
+                            <p class="project-description">A website created for the Museum of Brisbane.  Displaying content from their 100% Brisbane exhibition, the site serves as a teaser to encourage users to visit the physical exhibit.</p>
+                            <a target="_blank" class="demo-link" href="../museum/index.php">View Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item project-6">
+                            <div class="project-details">
+                                    <span class="project-title">DC Limos</span>
+                                    <p class="project-description">A work in progress website revamp done for a family friend.</p>
+                                    <a target="_blank" class="demo-link" href="../dc-limos/index.html">View Demo</a>
+                            </div>
+                    </div>
+
+                    <div class="project-item project-2">
+                        <div class="project-details">
+                                <span class="project-title">Library Equipment Booking System</span>
+                                <p class="project-description">An equipment / study space booking system created using a PHP backend. Users may reserve certain spaces which are then represented on the livemap of the library.  
+                                    Unfortunately I do not have this hosted at the moment. </p>
+                                <a target="_blank" class="demo-link" href="./images/library-map.png">View Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-item project-4">
+                            <div class="project-details">
+                                    <span class="project-title">Parkit.</span>
+                                    <p class="project-description">A proof of concept prototype for the 'Parkit' mobile app. Parkit is a crowd sourced carpark leasing service based on the concept provided by Air BnB</p>
+                                    <a target="_blank" class="demo-link" href="../parkit/rent.php">View Demo</a>
+                            </div>
+                    </div>
+
+                    <!-- 
+                    <div class="project-item project-3">
+                        <div class="project-details">
+                                <span class="project-title">Arena of Electronica</span>
+                                <p class="project-description">A fan created website for the band 'Arena of Electronica'.  Completed as a university project, this was one of the first websites I created.</p>
+                                <a target="_blank" class="demo-link" href="../music/index.html">View Demo</a>
+                        </div>
+                    </div> -->
+
+
+                    <div class="project-item project-5">
+                        <div class="project-details">
+                                <span class="project-title">Monopoly</span>
+                                <p class="project-description">A faithful recreation of the original Monopoly board.  This was was completed as a chance to learn CSS grid.</p>
+                                <a target="_blank" class="demo-link" href="../monopoly/index.html">View Demo</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- Contact Page -->
+            <div id="contact">
+                <div class="content-container">
+                    <h2 class="page-title">Contact Me</h2>
+                    <p class="text-center">Want to get in touch? Drop me an email or use the form below</p>
+
+                    <form action="mailto:jarrod.stone1@gmail.com" method="post" enctype="text/plain">
+                        <div id="contact-form">
+                            <div id="user-details">
+                                <label for="name">Your Name: <span class="red">*</span></label>
+                                <input type="text" class="form-control" id="name" placeholder="John Smith" required>
+
+                                <label for="email">Email address: <span class="red">*</span></label>
+                                <input type="email" class="form-control" id="email" placeholder="email@address.com" required>
+
+                                <label for="company">Company:</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                            </div>
+
+                            <div id="user-message">
+                                <label id="contact-message-label" for="message">Message: <span class="red">*</span></label>
+                                <textarea id="contact-message-textarea" id="message" name="message" rows="9"></textarea>
+                                <button id="message-send" type="submit" class="btn btn-default msg-btn">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+</body>
+
+</html>

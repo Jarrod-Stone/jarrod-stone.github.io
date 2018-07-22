@@ -1,0 +1,347 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/functions.js" defer></script>
+</head>
+
+<body>
+
+    <div class="board" id="board">
+
+        <!-- Top Row of Board -->
+        <div class="row horizontal-row top">
+            <div class="space corner top-left" id="">
+                <div class="visiting-jail">
+                    <div class="just-section"><p>Just</p></div>
+                    <div class="visiting-section"><p class="visiting-text">Visiting</p></div>
+                    <div class="jail-section">
+                        <div class="container">
+                            <p class="jail-text">In</p>
+                            <p class="jail-text">Jail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set purple"></div>
+                    <p class="property-name">Pall Mall</p>
+                    <p class="property-price">Price: $140</p>
+                </div>
+            </div>
+
+            <div class="space utility-electric" id="">               
+                    <div class="container">
+                        <p class="utility">Electric Company</p>
+                        <p class="property-price">Price: $150</p>
+                    </div>
+            </div>            
+            
+            <div class="space property" id="">               
+                    <div class="container">
+                        <div class="set purple"></div>
+                        <p class="property-name">Whitehall</p>
+                        <p class="property-price">Price: $140</p>
+                    </div>
+            </div>         
+
+            <div class="space property" id="">               
+                    <div class="container">
+                        <div class="set purple"></div>
+                        <p class="property-name">Northumberland Avenue</p>
+                        <p class="property-price">Price: $160</p>
+                    </div>
+            </div>            
+
+            <div class="space railway" id="">               
+                    <div class="container">
+                        <p class="railway-name">Marylebone Station</p>
+                        <p class="property-price">Price: $200</p>
+                    </div>
+            </div>           
+
+            <div class="space property" id="">               
+                    <div class="container">
+                        <div class="set orange"></div>
+                        <p class="property-name">Bow Street</p>
+                        <p class="property-price">Price: $180</p>
+                    </div>
+            </div>             
+
+            <div class="space community-chest-space" id="">               
+                    <div class="container">
+                        <p class="community-chest">Community Chest</p>
+                        <p class="instructions">Follow Instructions</p>
+                    </div>
+            </div>
+
+            <div class="space property" id="">               
+                    <div class="container">
+                        <div class="set orange"></div>
+                        <p class="property-name">Marlborough Street</p>
+                        <p class="property-price">Price: $180</p>
+                    </div>
+            </div>            
+
+            <div class="space property" id="">               
+                    <div class="container">
+                        <div class="set orange"></div>
+                        <p class="property-name">Vine Street</p>
+                        <p class="property-price">Price: $200</p>
+                    </div>
+            </div> 
+
+            <div class="space corner top-right" id="">
+                <div class="container">
+                    <p class="free-parking">Free</p>
+                    <p class="free-parking">Parking</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left Row of Board -->
+        <div class="row vertical-row left">
+            
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set light-blue"></div>
+                    <p class="property-name">Pentonville Road</p>
+                    <p class="property-price">Price: $120</p>
+                </div>
+            </div>  
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set light-blue"></div>
+                    <p class="property-name">Euston Road</p>
+                    <p class="property-price">Price: $100</p>
+                </div>
+            </div>            
+            
+            <div class="space chance-space" id="">               
+                <div class="container">
+                    <p class="chance">Chance</p>
+                </div>
+            </div>            
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set light-blue"></div>
+                    <p class="property-name">The Angel Islington</p>
+                    <p class="property-price">Price: $100</p>
+                </div>
+            </div>            
+
+            <div class="space railway" id="">               
+                <div class="container">
+                    <p class="railway-name">Kings Cross Station</p>
+                    <p class="property-price">Price: $200</p>
+                </div>
+            </div>            
+
+            <div class="space income-tax-space" id="">               
+                <div class="container">
+                    <p class="income-tax">Income Tax</p>
+                    <p class="instructions">Pay 10% or $200</p>
+                </div>
+            </div>            
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set brown"></div>
+                    <p class="property-name">Whitechapel Road</p>
+                    <p class="property-price">Price: $50</p>
+                </div>
+            </div>
+
+            <div class="space community-chest-space" id="">               
+                <div class="container">
+                    <p class="community-chest">Community Chest</p>
+                    <p class="instructions">Follow Instructions</p>
+                </div>
+            </div>             
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set brown"></div>
+                    <p class="property-name">Old Kent Road</p>
+                    <p class="property-price">Price: $50</p>
+                </div>
+            </div>
+                    
+        </div>
+
+        <!-- Center space of Board -->        
+        <div class="center" id="center">
+            <h1 class="main">Monopoly</h1>
+            <div class="rotate-buttons">
+                <button onclick="rotateLeft()">Rotate Left</button>
+                <button onclick="rotateRight()">Rotate Right</button>
+            </div>
+        </div>
+
+        <!-- Right Row of Board -->        
+        <div class="row vertical-row right">
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set red"></div>
+                    <p class="property-name">Strand</p>
+                    <p class="property-price">Price: $200</p>
+                </div>
+            </div>
+
+            <div class="space chance-space" id="">               
+                <div class="container">
+                    <p class="chance">Chance</p>
+                </div>
+            </div>            
+            
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set red"></div>
+                    <p class="property-name">Fleet Street</p>
+                    <p class="property-price">Price: $200</p>
+                </div>
+            </div>         
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set red"></div>
+                    <p class="property-name">Trafalgar Square</p>
+                    <p class="property-price">Price: $220</p>
+                </div>
+            </div>            
+
+            <div class="space railway" id="">               
+                <div class="container">
+                    <p class="railway-name">Fenchurch St Station</p>
+                    <p class="property-price">Price: $200</p>
+                </div>
+            </div>           
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set yellow"></div>
+                    <p class="property-name">Leicester Square</p>
+                    <p class="property-price">Price: $260</p>
+                </div>
+            </div>    
+            
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set yellow"></div>
+                    <p class="property-name">Coventry Street</p>
+                    <p class="property-price">Price: $260</p>
+                </div>
+            </div>             
+
+            <div class="space utility-water" id="">               
+                <div class="container">
+                    <p class="utility">Water Works</p>
+                    <p class="property-price">Price: $150</p>
+                </div>
+            </div>             
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set yellow"></div>
+                    <p class="property-name">Picadilly</p>
+                    <p class="property-price">Price: $280</p>
+                </div>
+            </div> 
+
+        </div>
+
+         <!-- Bottom Row of Board -->       
+        <div class="row horizontal-row bottom">
+            
+            <div class="space corner bottom-left" id="">
+                <div class="container">
+                    <p class="space-name go-instructions">Collect $200 salary as you pass</p>
+                    <p class="space-name go">GO</p>
+                </div>
+            </div>
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set blue"></div>
+                    <p class="property-name">Mayfair</p>
+                    <p class="property-price">Price: $400</p>
+                </div>
+            </div>
+
+            <div class="space luxury-tax-space" id="">               
+                <div class="container">
+                    <p class="luxury-tax">Luxury Tax</p>
+                    <p class="instructions">Pay $75</p>
+                </div>
+            </div>            
+            
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set blue"></div>
+                    <p class="property-name">Park Lane</p>
+                    <p class="property-price">Price: $350</p>
+                </div>
+            </div>         
+
+            <div class="space chance-space" id="">               
+                <div class="container">
+                    <p class="chance">Chance</p>
+                </div>
+            </div>            
+
+            <div class="space railway" id="">               
+                <div class="container">
+                    <p class="railway-name">Liverpool St Station</p>
+                    <p class="property-price">Price: $200</p>
+                </div>
+            </div>           
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set green"></div>
+                    <p class="property-name">Bond Street</p>
+                    <p class="property-price">Price: $320</p>
+                </div>
+            </div>    
+            
+            <div class="space community-chest-space" id="">               
+                <div class="container">
+                    <p class="community-chest">Community Chest</p>
+                    <p class="instructions">Follow Instructions</p>
+                </div>
+            </div>             
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set green"></div>
+                    <p class="property-name">Oxford Street</p>
+                    <p class="property-price">Price: $300</p>
+                </div>
+            </div>             
+
+            <div class="space property" id="">               
+                <div class="container">
+                    <div class="set green"></div>
+                    <p class="property-name">Regent Street</p>
+                    <p class="property-price">Price: $300</p>
+                </div>
+            </div> 
+
+            <div class="space corner bottom-right" id="">
+                <div class="container">
+                    <p class="jail">Go To</p>
+                    <p class="jail">Jail</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>

@@ -1,0 +1,408 @@
+/* CSS Reset */
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* Universal Styling */
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.1em;
+    font-size: 1.1em;
+}
+
+.text-center{
+    text-align: center;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#a1c4fd, #c2e9fb);
+}
+
+.red{
+    color: red;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+#navigation{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 60px;
+    height: auto;
+    order: 1;
+    background-color: #181818;
+}
+
+#navigation li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#navigation li a:hover{
+    cursor: pointer;
+}
+
+#navigation img{
+    max-width: 40px;
+}
+
+#external-links{
+    min-height: 40px;
+    width: 40px;
+}
+
+
+#main{
+    flex: 1;
+    display: flex;
+    order: 2;
+    width: 100%;
+    height: 100%;
+}
+
+.page-title{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.content-container{
+    outline-color: yellow;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 100px 15px 10px 15px;
+}
+
+#logo{
+    width: 100%;
+    margin-left: 15px;
+}
+
+
+
+/*  Landing Page */
+
+
+#landing{
+    margin: 30vh auto 0 auto;
+    text-align: center;
+}
+
+#splash-name{
+    font-size: 5.0em;
+    margin-bottom: 15px;
+}
+
+.splash-text{
+    font-size: 1.6em;
+    line-height: 2em;
+    margin-bottom: 15px;
+}
+
+/* About */
+
+#about{
+    display: none;
+    width: 100%;
+}
+
+#about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+#about-text{
+    width: 50%;
+    outline-color: red;
+    padding-bottom: 20px;
+}
+
+#portrait{
+    width: 300px;
+    outline-color: cyan;
+}
+
+#portrait img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Projects */
+
+#projects{
+    display: none;
+    width: 100%;
+}
+
+#projects-page-title{
+    padding: 100px 15px 10px 15px;
+}
+
+#project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-gap: 60px;
+    margin-top: 50px;
+    padding: 0 15px 40px 15px;
+    width: 70%;
+    margin: auto;
+}
+
+.project-item{
+	height: 100%;
+    width: 100%;
+    min-height: 200px;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project-item a{
+    color: white;
+}
+
+#project-details{
+    display: none;
+}
+
+/*  Displays the project details only on rollover  */
+.project-item:hover .project-details{
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: auto;
+    height: 100%;
+}
+
+.project-title{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+.project-description{
+    padding-left: 10px;
+}
+
+.demo-link{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.demo-link:hover{
+    color: #FF7900;
+}
+
+.project-1{
+    background-image: url("../images/100brisbane.png")
+}
+
+.project-2{
+    background-image: url("../images/library.png")
+}
+
+.project-3{
+    background-image: url("../images/band.jpg")
+}
+
+.project-4{
+    background-image: url("../images/parkit.png")
+}
+
+.project-5{
+    background-image: url("../images/monopoly.png")
+}
+
+.project-6{
+    background-image: url("../images/dclimos.png")
+}
+
+
+
+.project-details{
+    display: none;
+}
+
+/* Contact */
+
+#contact{
+    display: none;
+    width: 100%;
+}
+
+#contact-form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#contact-form label{
+    margin-bottom: 5px;
+}
+
+#contact-form input{
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: 13px;
+    line-height: 18px;
+    height: 50px;
+    padding: 10px;
+}
+
+#contact-form input,textarea{
+    outline: 1px solid grey;
+}
+
+#user-details{
+    width: 45%;
+}
+
+#user-message{
+    width: 45%;
+}
+
+#contact-message-textarea{
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px;
+}
+
+#message-send{
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+}
+
+.msg-btn{
+    color: #494949;
+    background: #ffffff;
+    border: 1px solid #494949;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.msg-btn:hover{
+    color: black;
+    background: #FF7900;
+    border-color: #FF7900;
+    transition: all 0.4s ease 0s;
+}
+
+
+
+
+/* layout for smaller screens */
+
+@media screen and (max-width: 600px){
+    /* Universal Styling */
+    .container{
+        flex-direction: column;
+    }
+    #main{
+        order: 1;
+    }
+    #navigation{
+        order: 2;
+        height: 60px;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+    }
+    #logo, #external-links{
+        display: none;
+    }
+    #internal-navigation-container{
+        margin-top: 6px;
+        height: 60px;
+        width: 100%;
+    }
+    #internal-links{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #internal-links li{
+        height: 60px;
+        width: 60px;
+    }
+    #internal-links img{
+        font-size: 16px;
+    }
+    .content-container{
+        padding-top: 25px;
+    }
+    /* Landing */
+
+    #landing{
+        margin-top: 15vh;
+    }
+    #splash-name{
+        font-size: 4.2em;
+    }
+    .splash-text{
+        font-size: 1.2em;
+        line-height: 1.4em;
+    }
+    /* About */
+    #about-content{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    #about-text{
+        width: 100%;
+    }
+    #portrait{
+        width: 100%;
+    }
+
+    /* Projects */
+    #project-container{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-auto-rows: 200px;
+        margin-bottom: 30px;
+    }
+
+    #projects-page-title{
+        padding-top: 25px;
+    }
+
+    /* Contact */
+    #contact-form{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #contact-form input{
+        height: 30px;
+    }
+    #user-details, #user-message{
+        width: 100%;
+    }
+
+}
