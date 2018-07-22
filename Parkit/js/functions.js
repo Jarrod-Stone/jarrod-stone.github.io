@@ -20,7 +20,7 @@ function loadOptions(){
 
 /* Redirects the user to the google maps page */
 function mapRedirect(){
-    window.location.href = "rent.php";
+    window.location.href = "rent.html";
 }
 
 /* Toggles between hiding and showing the options menu on the maps page */
