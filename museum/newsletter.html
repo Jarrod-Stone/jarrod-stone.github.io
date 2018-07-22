@@ -1,0 +1,25 @@
+<?php
+	include 'connectionDB.html';
+
+	/* insert user's details into newsletter table in database */
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$postcode = $_POST["postcode"];
+
+	// Connect to database
+	$conn = Connect();
+	$stmt = $conn->prepare("INSERT INTO newsletter(email, name, postcode) VALUES (?,?,?)");
+	$stmt->bind_param("sss", $email, $name, $postcode);
+
+	// execute statement
+	if ($stmt->execute()) { 
+   		// it worked
+   		echo "Signed up successfully!";
+   		echo "If not redirected <a href='index.html'> click here</a>";
+   		header( "refresh:2;url=index.html" );
+	} else {
+   		echo "Error occured" . mysqli_error($conn);
+   		header( "refresh:2;url=index.html" );
+	}
+
+?>

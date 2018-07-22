@@ -1,0 +1,25 @@
+<?php
+	include 'connectionDB.html';
+
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$message = $_POST["message"];
+
+	/* insert user's feedback into feedback table in database */
+		$conn = Connect();
+		$stmt = $conn->prepare("INSERT INTO feedback(name, email, message) VALUES (?,?,?)");
+		$stmt->bind_param("sss", $name, $email, $message);
+
+	// execute statement
+	if ($stmt->execute()) { 
+   		// it worked
+   		echo "Message sent successfully!";
+   		echo "If not redirected <a href='index.html'> click here</a>";
+   		header( "refresh:2;url=index.html" );
+	} else {
+		// fail
+   		echo "Error occured" . mysqli_error($conn);
+   		header( "refresh:2;url=index.html" );
+	}
+
+?>

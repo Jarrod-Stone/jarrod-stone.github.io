@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>100% Brisbane</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </head>
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand"><img id="header-logo" src="images/header.png" alt="100% Brisbane Logo"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="map.html">MAP</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li class="active"><a href="#">EXHIBITIONS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+<div class="container">
+    <div class="row centered"><div class="title1">The 100% Brisbane Exhibition</div></div>
+    <div class="row centered"><span class="subheading">Select a section below to find out more</span></div>
+  <div class="row centered">
+    <div class="col-lg-4 col-sm-6 col-xs-12" onclick="toggleModal('#country')">
+        <a href="#">
+            <img src="./images/exhibitionicons/countryicon.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Country</p>
+            </div>
+        </a>
+    </div>
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="">
+        <a href="birth.html">
+            <img src="./images/exhibitionicons/birthofacity.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Birth of a City</p>
+            </div>
+        </a>
+    </div>
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="toggleModal('#story')">
+        <a href="#">
+            <img src="./images/exhibitionicons/abrisbanestory.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">A Brisbane Story</p>
+            </div>
+        </a>
+    </div>
+
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="">
+        <a href="meanjin.html">
+            <img src="./images/exhibitionicons/meanjin.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Meanjin to Brisbane</p>
+            </div>
+        </a>
+    </div>
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="toggleModal('#tram')">
+        <a href="#">
+            <img src="./images/exhibitionicons/tram.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+                <p class="white background">Tram Days</p>
+            </div>
+        </a>
+    </div>
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="">
+        <a href="floods.html">
+             <img src="./images/exhibitionicons/floods.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Brisbane River Floods</p>
+            </div>
+        </a>
+    </div>
+
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="">
+        <a href="dna.html">
+             <img src="./images/exhibitionicons/dna.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Brisbane DNA</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-sm-6 col-xs-12" onclick="">
+        <a href="place.html">
+             <img src="./images/exhibitionicons/place.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Place</p>
+            </div>
+        </a>
+    </div>
+     <div class="col-lg-4 col-sm-6 col-xs-12" onclick="toggleModal('#life')">
+        <a href="#">
+             <img src="./images/exhibitionicons/dayinthelife.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">A Day in the Life of Brisbane</p>
+            </div>
+        </a>
+    </div>
+
+
+    <div class="col-lg-4 col-sm-6 col-xs-12" onclick="toggleModal('#scents')">
+        <a href="#">
+            <img src="./images/exhibitionicons/scentsofthecity.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">Scents of the City</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-lg-4 col-sm-6 col-xs-12"onclick="toggleModal('#radio')">
+        <a href="#">
+            <img src="./images/exhibitionicons/abcradio.jpg" class="thumbnail img-responsive">
+            <div class="carousel-caption">
+              <p class="white background">ABC Radio Booth</p>
+            </div>
+        </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="storyModal" class="modal fade" role="dialog" stlye="padding: 0">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Modal Header</h4>
+      </div>
+      <div class="modal-body">
+        <p>Some text in the modal.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+    // $("#ex1").click(function(){
+    //     $('#myModal').modal('toggle');
+    // });
+
+
+    function toggleModal(tile) {
+        tileModal = tile.concat('Modal');
+        var title;
+        var text;
+
+        switch(tile){
+            case '#country':
+                title = "Country";
+                text = "Members of the local Aboriginal community share their thoughts on what Country means to them";
+                break;
+            case '#birth':
+                title = "Birth of a City";
+                text = "1825 to 1839 Brisbane was a prison for convicts before being opened to free settlers in 1842";
+                break;
+            case '#story':
+                title = "A Brisbane Story";
+                text = "A short film exploring Brisbane’s history, written and presented by actor and author William McInnes.";
+                break;
+            case '#meanjin':
+                title = "Meanjin to Brisbane";
+                text = "As Brisbane developed, thousands of Aboriginal people were dispossessed of their land.";
+                break;
+            case '#tram':
+                title = "Tram Days";
+                text = "Brisbane’s tramway network serviced the city for nearly 80 years, playing a significant role in day-to-day life";
+                break;
+            case '#floods':
+                title = "Brisbane River Floods";
+                text = "Brisbane has experienced several major flood events, significantly impacting the city.";
+                break;
+            case '#dna':
+                title = "Brisbane RNA";
+                text = "Discover the thoughts, opinions and life stories of 100 Brisbane residents.";
+                break;
+            case '#place':
+                title = "Place";
+                text = "Explore the dynamic relationship between people and place, and what connects us to the city.";
+                break;
+            case '#life':
+                title = "A day in the life of Brisbane";
+                text = "Discover fun facts about life in Brisbane.";
+                break;
+            case '#scents':
+                title = "Scents of the City";
+                text = "Experience some of the evocative scents of Brisbane.";
+                break;
+            case '#radio':
+                title = "ABC Radio Booth";
+                text = "Come and add your views to ours in the 100% Brisbane ABC Radio Brisbane Booth then tune in to ABC Radio Brisbane for a chance to hear your story on air.";
+                break;
+
+
+        }
+
+        $(".modal-title").html(title);
+        $(".modal-body").html(text);
+        $('#storyModal').modal('toggle'); 
+    }
+    
+</script>
+</body>
+</html>
